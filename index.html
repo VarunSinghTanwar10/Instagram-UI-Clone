@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram UI Clone</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Instagram</h2>
+        </div>
+
+        <nav>
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Search</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-compass"></i>
+                <span>Explore</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-film"></i>
+                <span>Reels</span>
+            </a>
+
+            <a href="#" class="message-link">
+
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <span class="msg-count">7</span>
+                </div>
+
+                <span>Messages</span>
+
+            </a>
+
+            <a href="#" id="notificationBtn">
+                <i class="fa-regular fa-heart"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" id="createBtn">
+                <i class="fa-regular fa-square-plus"></i>
+                <span>Create</span>
+            </a>
+
+            <a href="#" id="profileBtn">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+            Dark Mode
+        </button>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="stories">
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg">
+                </div>
+
+                <p>Your Story</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/men/12.jpg">
+                </div>
+
+                <p>Rohit</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/women/22.jpg">
+                </div>
+
+                <p>Emma</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+                </div>
+
+                <p>Arjun</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg">
+                </div>
+
+                <p>Ananya</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/men/55.jpg">
+                </div>
+
+                <p>Karan</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg">
+                </div>
+
+                <p>Aditya</p>
+
+            </div>
+
+            <div class="story">
+
+                <div class="story-ring">
+                    <img src="https://randomuser.me/api/portraits/women/60.jpg">
+                </div>
+
+                <p>Sophia</p>
+
+            </div>
+
+        </section>
+
+        <section class="feed">
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/men/31.jpg">
+
+                        <div>
+
+                            <h4>
+                                john_doe
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </h4>
+
+                            <span>New Delhi</span>
+
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+                <div class="image-container">
+
+                    <img class="post-image" src="https://picsum.photos/600/600?random=11">
+
+                    <div class="heart-animation">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <div>
+
+                        <i class="fa-regular fa-heart like-btn"></i>
+
+                        <i class="fa-regular fa-comment comment-btn"></i>
+
+                        <i class="fa-regular fa-paper-plane"></i>
+
+                    </div>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+
+                <div class="likes">
+                    <strong>2,431 likes</strong>
+                </div>
+
+                <div class="caption">
+                    <strong>john_doe</strong>
+                    Beautiful evening vibes 🌇✨
+                </div>
+
+                <div class="comments-preview">
+                    View all 42 comments
+                </div>
+
+                <div class="post-footer">
+                    2 HOURS AGO
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/women/22.jpg">
+
+                        <div>
+
+                            <h4>
+                                emma
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </h4>
+
+                            <span>Mumbai</span>
+
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+                <div class="image-container">
+
+                    <img class="post-image" src="https://picsum.photos/600/600?random=12">
+
+                    <div class="heart-animation">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <div>
+
+                        <i class="fa-regular fa-heart like-btn"></i>
+
+                        <i class="fa-regular fa-comment comment-btn"></i>
+
+                        <i class="fa-regular fa-paper-plane"></i>
+
+                    </div>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+
+                <div class="likes">
+                    <strong>8,720 likes</strong>
+                </div>
+
+                <div class="caption">
+                    <strong>emma</strong>
+                    Weekend vibes and coffee ☕✨
+                </div>
+
+                <div class="comments-preview">
+                    View all 87 comments
+                </div>
+
+                <div class="post-footer">
+                    5 HOURS AGO
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg">
+
+                        <div>
+
+                            <h4>rohit</h4>
+
+                            <span>Jaipur</span>
+
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+                <div class="image-container">
+
+                    <img class="post-image" src="https://picsum.photos/600/600?random=13">
+
+                    <div class="heart-animation">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <div>
+
+                        <i class="fa-regular fa-heart like-btn"></i>
+
+                        <i class="fa-regular fa-comment comment-btn"></i>
+
+                        <i class="fa-regular fa-paper-plane"></i>
+
+                    </div>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+
+                <div class="likes">
+                    <strong>5,932 likes</strong>
+                </div>
+
+                <div class="caption">
+                    <strong>rohit</strong>
+                    Road trip memories 🚗🔥
+                </div>
+
+                <div class="comments-preview">
+                    View all 23 comments
+                </div>
+
+                <div class="post-footer">
+                    1 DAY AGO
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/women/41.jpg">
+
+                        <div>
+
+                            <h4>ananya</h4>
+
+                            <span>Bangalore</span>
+
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+                <div class="image-container">
+
+                    <img class="post-image" src="https://picsum.photos/600/600?random=14">
+
+                    <div class="heart-animation">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <div>
+
+                        <i class="fa-regular fa-heart like-btn"></i>
+
+                        <i class="fa-regular fa-comment comment-btn"></i>
+
+                        <i class="fa-regular fa-paper-plane"></i>
+
+                    </div>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+
+                <div class="likes">
+                    <strong>12,406 likes</strong>
+                </div>
+
+                <div class="caption">
+                    <strong>ananya</strong>
+                    Chasing sunsets 🌅
+                </div>
+
+                <div class="comments-preview">
+                    View all 108 comments
+                </div>
+
+                <div class="post-footer">
+                    2 DAYS AGO
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <aside class="profile-card">
+
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Varun">
+
+        <h3>Varun</h3>
+
+        <p>Frontend Developer</p>
+
+        <div class="stats">
+
+            <div>
+                <strong>125</strong>
+                <span>Posts</span>
+            </div>
+
+            <div>
+                <strong>5.2K</strong>
+                <span>Followers</span>
+            </div>
+
+            <div>
+                <strong>500</strong>
+                <span>Following</span>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <div class="notification-panel">
+
+        <h3>Notifications</h3>
+
+        <div class="notification">
+            ❤️ Emma liked your photo
+        </div>
+
+        <div class="notification">
+            💬 Rohit commented on your post
+        </div>
+
+        <div class="notification">
+            👤 Ananya started following you
+        </div>
+
+        <div class="notification">
+            🔥 Your post reached 1,000 likes
+        </div>
+
+        <div class="notification">
+            🎉 New story reaction received
+        </div>
+
+    </div>
+
+    <div class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-modal">&times;</span>
+
+            <h2>Comments</h2>
+
+            <div class="comments">
+
+                <p>
+                    <strong>Emma:</strong>
+                    Amazing picture 🔥
+                </p>
+
+                <p>
+                    <strong>Rohit:</strong>
+                    Looking awesome bro 😎
+                </p>
+
+                <p>
+                    <strong>Ananya:</strong>
+                    Great click ❤️
+                </p>
+
+            </div>
+
+            <input type="text" placeholder="Add a comment...">
+
+        </div>
+
+    </div>
+
+    <div class="create-modal">
+
+        <div class="create-content">
+
+            <span class="close-create">&times;</span>
+
+            <h2>Create Post</h2>
+
+            <input type="file">
+
+            <textarea placeholder="Write a caption..."></textarea>
+
+            <button>Create Post</button>
+
+        </div>
+
+    </div>
+
+    <div class="profile-popup">
+
+        <div class="profile-popup-content">
+
+            <span class="close-profile">&times;</span>
+
+            <img src="https://randomuser.me/api/portraits/men/75.jpg">
+
+            <h2>Varun</h2>
+
+            <p>Frontend Developer</p>
+
+            <div class="popup-stats">
+
+                <div>
+                    <strong>125</strong>
+                    <span>Posts</span>
+                </div>
+
+                <div>
+                    <strong>5.2K</strong>
+                    <span>Followers</span>
+                </div>
+
+                <div>
+                    <strong>500</strong>
+                    <span>Following</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="mobile-nav">
+
+        <a href="#" class="active">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-film"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+    </nav>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
