@@ -35,13 +35,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeProfile =
         document.querySelector(".close-profile");
 
+    const mobileThemeToggle =
+        document.getElementById("mobileThemeToggle");
+
+    const mobileProfileBtn =
+        document.getElementById("mobileProfileBtn");
+
     if (localStorage.getItem("theme") === "dark") {
 
         body.classList.add("dark");
 
     }
 
-    themeToggle.addEventListener("click", () => {
+    function toggleTheme() {
 
         body.classList.toggle("dark");
 
@@ -55,7 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-    });
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+
+    if (mobileThemeToggle) {
+
+        mobileThemeToggle.addEventListener(
+            "click",
+            toggleTheme
+        );
+
+    }
 
     notificationBtn.addEventListener("click", (e) => {
 
@@ -110,6 +127,18 @@ document.addEventListener("DOMContentLoaded", () => {
         profilePopup.classList.add("show");
 
     });
+
+    if (mobileProfileBtn) {
+
+        mobileProfileBtn.addEventListener("click", (e) => {
+
+            e.preventDefault();
+
+            profilePopup.classList.add("show");
+
+        });
+
+    }
 
     closeProfile.addEventListener("click", () => {
 
@@ -276,57 +305,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let postCount = 0;
 
-window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => {
 
-    if (
-        window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 200
-    ) {
+        if (
+            window.innerHeight + window.scrollY >=
+            document.documentElement.scrollHeight - 200
+        ) {
 
-        addNewPost();
+            addNewPost();
 
-    }
+        }
 
-});
+    });
 
-function addNewPost() {
+    function addNewPost() {
 
-    if (postCount >= 10) return;
+        if (postCount >= 10) return;
 
-    postCount++;
+        postCount++;
 
-    const usernames = [
-        "Varun",
-        "Rohit",
-        "Aditya",
-        "Karan",
-        "Aman",
-        "Rahul",
-        "Vivek",
-        "Yash",
-        "Harsh",
-        "Arjun",
-        "Aryan",
-        "Sarthak"
-    ];
+        const usernames = [
+            "Varun",
+            "Rohit",
+            "Aditya",
+            "Karan",
+            "Aman",
+            "Rahul",
+            "Vivek",
+            "Yash",
+            "Harsh",
+            "Arjun",
+            "Aryan",
+            "Sarthak"
+        ];
 
-    const username =
-    usernames[
-        Math.floor(
-            Math.random() *
-            usernames.length
-        )
-    ];
+        const username =
+            usernames[
+            Math.floor(
+                Math.random() *
+                usernames.length
+            )
+            ];
 
-    const feed =
-    document.querySelector(".feed");
+        const feed =
+            document.querySelector(".feed");
 
-    const newPost =
-    document.createElement("div");
+        const newPost =
+            document.createElement("div");
 
-    newPost.className = "post";
+        newPost.className = "post";
 
-    newPost.innerHTML = `
+        newPost.innerHTML = `
 
     <div class="post-header">
 
@@ -395,8 +424,8 @@ function addNewPost() {
 
     `;
 
-    feed.appendChild(newPost);
+        feed.appendChild(newPost);
 
-}
+    }
 
 });
