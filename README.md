@@ -33,7 +33,7 @@ A modern Instagram-inspired social media dashboard built using HTML, CSS, and Ja
 
 ### Mobile View
 
-![Mobile View](Screenshots/Mobile.png)
+![Mobile View](Screenshots/Mobile-v2.png)
 
 ## Technologies Used
 
