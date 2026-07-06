@@ -21,6 +21,20 @@ A modern Instagram-inspired social media dashboard built using HTML, CSS, and Ja
 * Mobile bottom navigation
 * Responsive design for desktop, tablet, and mobile devices
 
+## 📸 Screenshots
+
+### Home Feed
+
+![Home Feed](Screenshots/Home.png)
+
+### Light Mode
+
+![Light Mode](images/LightTheme.png)
+
+### Mobile View
+
+![Mobile View](images/Mobile.png)
+
 ## Technologies Used
 
 * HTML5
