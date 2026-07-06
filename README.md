@@ -29,11 +29,11 @@ A modern Instagram-inspired social media dashboard built using HTML, CSS, and Ja
 
 ### Light Mode
 
-![Light Mode](images/LightTheme.png)
+![Light Mode](Screenshots/LightTheme.png)
 
 ### Mobile View
 
-![Mobile View](images/Mobile.png)
+![Mobile View](Screenshots/Mobile.png)
 
 ## Technologies Used
 
